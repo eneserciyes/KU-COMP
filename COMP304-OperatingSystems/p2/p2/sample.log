@@ -1,0 +1,49 @@
+All commentators are created
+[0::0.0] Moderator asks question #1
+[0::0.0] Commentator #1 generates an answer - Position in queue: 0
+[0::0.0] Commentator #2 generates an answer - Position in queue: 1
+[0::0.0] Commentator #1's turn to speak for 0.152142 seconds.
+[0::0.152] Commentator #1 finished speaking
+[0::0.152] Commentator #2's turn to speak for 0.890227 seconds.
+[0::1.43] Commentator #2 finished speaking
+[0::1.43] Moderator asks question #2
+[0::1.43] Commentator #1 generates an answer - Position in queue: 0
+[0::1.43] Commentator #2 generates an answer - Position in queue: [0::1.43] Commentator #3 generates an answer - Position in queue: 2
+2
+[0::1.43] Commentator #1's turn to speak for 2.18658 seconds.
+[0::3.230] Commentator #1 finished speaking
+[0::3.230] Commentator #2's turn to speak for 0.689018 seconds.
+[0::3.919] Commentator #2 finished speaking
+[0::3.919] Commentator #3's turn to speak for 0.381188 seconds.
+[0::4.301] Commentator #3 finished speaking
+[0::4.301] Moderator asks question #3
+[0::4.301] Commentator #1 generates an answer - Position in queue: 0
+[0::4.301] Commentator #2 generates an answer - Position in queue: 2
+[0::4.301] Commentator #0 generates an answer - Position in queue: 2
+[0::4.301] Commentator #1's turn to speak for 1.69313 seconds.
+[0::5.994] Commentator #1 finished speaking
+[0::5.994] Commentator #2's turn to speak for 1.78237 seconds.
+[0::7.777] Commentator #2 finished speaking
+[0::7.777] Commentator #0's turn to speak for 0.38251 seconds.
+[0::8.160] Commentator #0 finished speaking
+[0::8.160] Moderator asks question #4
+[0::8.160] Commentator #3 generates an answer - Position in queue: [0::8.160] Commentator #2 generates an answer - Position in queue: 2
+[0::8.160] Commentator #0 generates an answer - Position in queue: 2
+2
+[0::8.160] Commentator #3's turn to speak for 1.56979 seconds.
+[0::9.730] Commentator #3 finished speaking
+[0::9.730] Commentator #0's turn to speak for 1.76026 seconds.
+[0::11.491] Commentator #0 finished speaking
+[0::11.491] Commentator #2's turn to speak for 2.06231 seconds.
+[0::13.553] Commentator #2 finished speaking
+[0::13.553] Moderator asks question #5
+[0::13.553] [0::13.553] [0::13.553] Commentator #3 generates an answer - Position in queue: 2
+Commentator #1 generates an answer - Position in queue: 2
+Commentator #0 generates an answer - Position in queue: 2
+[0::13.554] Commentator #3's turn to speak for 2.42316 seconds.
+[0::15.977] Commentator #3 finished speaking
+[0::15.977] Commentator #0's turn to speak for 2.80434 seconds.
+[0::18.782] Commentator #0 finished speaking
+[0::18.782] Commentator #1's turn to speak for 2.00306 seconds.
+[0::20.785] Commentator #1 finished speaking
+All finished

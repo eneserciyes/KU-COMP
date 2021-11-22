@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/usr/include/**",
+                "${workspaceFolder}/include/**"
+            ],
+            "name": "ROS",
+            "cppStandard": "c++20"
+        }
+    ],
+    "version": 4
+}
