@@ -1,0 +1,4 @@
+vhdl work "C:\Users\otas17\Desktop\ElecLab4\Chronometer\seven_segment\slowerClock.vhd"
+vhdl work "C:\Users\otas17\Desktop\ElecLab4\Chronometer\seven_segment\driver.vhd"
+vhdl work "C:\Users\otas17\Desktop\ElecLab4\Chronometer\seven_segment\decoder.vhd"
+vhdl work "C:\Users\otas17\Desktop\ElecLab4\Chronometer\seven_segment\sevenSegment.vhd"

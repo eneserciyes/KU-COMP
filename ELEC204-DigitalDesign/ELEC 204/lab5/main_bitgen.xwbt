@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\bboru17\Desktop\lab5\main.ncd
+OUTFILE=C:\Users\bboru17\Desktop\lab5\main.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5vq100
+WORKINGDIR=C:\Users\bboru17\Desktop\lab5
+LICENSE=WebPack
+USER_INFO=211816171_0_0_410

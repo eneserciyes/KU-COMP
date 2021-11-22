@@ -1,0 +1,413 @@
+;;; YOUR NAME: 
+;;;
+;;; Comp200 Project 3
+;;;
+;;; Before you start:
+;;;
+;;; * Please read the detailed instructions for this project from the
+;;; file project3.pdf available in the Projects section of the
+;;; course website.
+;;;
+;;; * Please read the project submission instructions carefully and make
+;;; sure you understand everything before you start working on your
+;;; project in order to avoid problems.
+;;;
+;;; While you are working:
+;;; * Type all your work and notes in the appropriate sections of this file.
+;;; * Please do not delete any of the existing lines.
+;;; * Use the procedure names given in the instructions.
+;;; * Remember to frequently save your file.
+;;; * Use semicolon (;) to comment out text, tests and unused code.
+;;; * Remember to document your code.
+;;; * Remember our collaboration policy: you can discuss with your friends but:
+;;;
+;;;   *** NOTHING WRITTEN GETS EXCHANGED ***
+;;;
+;;; When you are done:
+
+;;; * Perform a final save and copy the file to the following location
+;;;   DriveF@VOL\UGRADS\COMP200\HOMEWORK\username\project3.zip
+;;;   where the username is your login name.
+;;; * Please do not make any modifications after midnight on the due date.
+;;; * Please send an email comp200-group@ku.edu.tr if you have any questions.
+;;; * Make sure your file loads without errors:
+;;;
+;;;
+;;; Before the definition of each procedure, please write a description
+;;; about what the procedure does and what its input and output should
+;;; be, making sure the lines are commented out with semi-colons.
+(define your-answer-here -1)
+(load "databases.scm")
+
+;_BANNER_
+;;; problem 1 ;;;
+
+;; your code should have the following general form
+
+(define example-table
+your-answer-here
+   )
+your-answer-here
+
+;; test cases
+;; (table-display example-table)
+
+;_BANNER_
+;;; problem 2 ;;;
+(define (table-insert-all! lst table)
+your-answer-here
+)
+;; test cases
+
+;; (define books (make-empty-table
+;; 	       (list (make-column 'title 'symbol)
+;; 		     (make-column 'author 'symbol)
+;; 		     (make-column 'rating 'number))))
+
+
+;; (table-insert-all! '((sicp abelson-sussman 8)
+;; 		     (return-of-the-king jrr-tolkien 9)
+;; 		     (treatment-of-subordinates darth-vader 4)
+;; 		     (project-grading tom 2)
+;; 		     (all-things-stata frank-gehry 5)
+;; 		     (biting-the-hand-that-feeds-me my-cat 1))
+;; 		   books)
+;; (table-display books)
+
+;_BANNER_
+;;; problem 3 ;;;
+;; Hint: Writing (filter predicate lst) might be helpful
+your-answer-here
+(define (table-select selector table)
+your-answer-here
+  )
+
+;; test cases
+
+;; (display "Testing Problem 3\n")
+;; (table-display
+;;  (table-select
+;;   (lambda (row)
+;;     (> (get 'rating row) 4))
+;;   books))
+
+;_BANNER_
+;;; problem 4 ;;;
+
+;; Hint: Be careful about the comparator operator of the corresponding
+;; row.  Writing a (get-column-type row column-name) might be helpful.
+your-answer-here
+(define (table-order-by column table)
+your-answer-here
+)
+;; test cases
+;; (display "Testing Problem 4\n")
+;; (table-display
+;;  (table-order-by 'rating books)
+;; )
+;;
+;; (table-display
+;;  (table-order-by 'title books)
+;; )
+
+;_BANNER_
+;;; problem 5 ;;;
+
+(define (table-delete! pred table)
+your-answer-here
+  )
+
+;; test cases
+;; (display "Testing Problem 5\n")
+;; (table-delete!
+;;  (lambda (row)
+;;   (eq? (get 'author row) 'my-cat))
+;; books)
+
+;; (table-display books)
+
+;_BANNER_
+;;; problem 6 ;;;
+(define (table-update! pred column proc table)
+your-answer-here
+  )
+;; test cases
+
+;; (display "Testing Problem 6\n")
+;; (table-update! (lambda (row) (or (eq? (get 'name row) 'amy) (eq? (get 'name row) 'alex))) 
+;;               'major 
+;;               (lambda (row) '9) 
+;;               example-table) 
+;; (table-display example-table)
+
+;_BANNER_
+;;; problem 7 ;;;
+
+(define *type-table*
+your-answer-here
+)
+
+(define example-table2
+your-answer-here
+   )
+
+;; test cases
+;; (display "Testing Problem 7\n")
+;; (table-insert! '("jen" 3) example-table2)
+;; (table-insert! '("ben" 6) example-table2)
+;; (table-insert! '("alex" 6) example-table2)
+;; (table-insert! '("amy" 12) example-table2)
+;; (table-insert! '("kim" 13) example-table2)
+
+
+;; (table-display example-table2)
+;; (display "\nordered example-table2\n")
+;; (table-display
+;;  (table-order-by 'name example-table2)
+;; )
+
+;_BANNER_
+;;; problem 8 ;;;
+
+;; Hint: Writing these two procedures might be helpful (contains? lst
+;; x) returns true if x in the lst and (get-pos lst x) returns the
+;; position of x if it is in the list.  
+;; Ex: (get-pos '(1 2 3 4) 2) => 2
+;;     (get-pos '(1 2 3 4) 5) => 0
+your-answer-here
+(define (make-enum-checker lst)
+your-answer-here
+  )
+(define (make-enum-comparator lst)
+your-answer-here
+)
+(define *days* '(sunday monday tuesday Wednesday thursday friday saturday)) 
+(define day-checker (make-enum-checker *days*)) 
+(define day-comparator (make-enum-comparator *days*)) 
+
+;; test cases
+;; (display "Testing Problem 8\n")
+;; (day-checker 'monday)   ;=> #t 
+;; (day-checker 7)         ;=> #f
+;; (day-comparator 'monday 'tuesday)   ;=> #t (monday is "less than" tuesday) 
+;; (day-comparator 'friday 'sunday)    ;=> #f (sunday is before friday) 
+
+
+(define *type-table*
+your-answer-here
+)
+
+;; (define example-table3
+;;   (make-empty-table 
+;;    (list (make-column 'name 'string)
+;;          (make-column 'date 'day) 
+;;          (make-column 'major 'number)))
+;;    )
+                    
+;; (table-insert! '("jen" monday 3) example-table3)
+;; (table-insert! '("ben" sunday 6) example-table3)
+;; (table-insert! '("alex" friday 6) example-table3)
+;; (table-insert! '("amy" tuesday 1) example-table3)
+;; (table-insert! '("kim" saturday 2) example-table3)
+
+;; (table-display example-table3)
+;; (display "\nordered example-table3\n")
+;; (table-display
+;;  (table-order-by 'date example-table3)
+;; )
+
+;_BANNER_
+;;; Problem 9
+;; Hint: Similar with Problem 8
+(define *gender* '(male female))
+(define gender-checker 
+your-answer-here
+) 
+(define gender-comparator 
+your-answer-here
+) 
+(define *race* '(white black red))
+
+(define race-checker 
+your-answer-here
+) 
+(define race-comparator
+your-answer-here
+) 
+
+(define *type-table*
+your-answer-here
+)
+
+;_BANNER_
+;;; Problem 10
+
+(define person-table
+your-answer-here
+)
+;;; tests
+;; (display "Testing Problem 10\n")
+;; (table-insert! '("jen" white female 1983) person-table)
+;; (table-insert! '("axe" black male 1982) person-table)
+;; (table-display person-table)
+
+
+;_BANNER_
+;;; Problem 11
+;; (table-delete! (lambda (x) #t) person-table)
+;; (display "\nDeleted Person Table\n")
+;; (table-display person-table)
+
+(define (make-person name race gender birthyear)
+your-answer-here
+  name)
+
+;; test cases
+
+;; (display "Testing Problem 11\n")
+
+;; (define p1 (make-person "Alex" 'white 'male 1983))
+;; (define p2 (make-person "Clark" 'black 'male 1982))
+;; (table-display person-table)
+
+;_BANNER_
+;;; Problem 12
+
+;; (define (person-name person) person)
+
+(define (lookup-person-row person)
+your-answer-here
+  )
+
+(define (person-race person) 
+  (get 'race (lookup-person-row person))) 
+
+(define (person-gender person) 
+  (get 'gender (lookup-person-row person))) 
+
+(define (person-birthyear person) 
+  (get 'birthyear (lookup-person-row person))) 
+
+(define (person-age person) 
+; returns an approximation to the person's age in years 
+  (let ((*current-year* 2019)) 
+    (- *current-year* (person-birthyear person)))) 
+
+;; test cases
+;; (display "Testing Problem 12\n")
+;; (lookup-person-row p1)
+;; (person-race p1)
+;; (person-gender p1)
+;; (person-birthyear p1)
+;; (person-age p1)
+;; (lookup-person-row "Muslera")
+
+;_BANNER_
+;;; Problem 13
+
+(define (update-person-row! person colname newvalue)
+your-answer-here
+  )
+
+(define (set-person-name! person newname) 
+  (update-person-row! person 'name newname))
+
+(define (set-person-race! person newrace) 
+  (update-person-row! person 'race newrace)) 
+
+(define (set-person-gender! person newgender) 
+  (update-person-row! person 'gender newgender)) 
+
+(define (set-person-birthyear! person newbirthyear) 
+  (update-person-row! person 'birthyear newbirthyear)) 
+
+;; QUESTION What happens? Why? Comments?
+your-answer-here
+
+;;; test cases
+
+;; (display "Testing Problem 13\n")
+;; (define alyssa (make-person "alyssa-p-hacker" 'black 'female 1978)) 
+;; (set-person-name! alyssa "alyssa-p-hacker-bitdiddle")  ; got married! 
+;; (table-display person-table)
+;; (person-name alyssa) 
+;; (person-race alyssa) 
+
+;_BANNER_
+;;; Problem 14
+
+(define life-table
+your-answer-here
+)
+
+(table-insert-all! life-expect-data life-table)
+
+;; (display "Selecting 1950\n")
+;; (table-display
+;;  (table-select
+;;  (lambda (row)
+;;    (= (get 'year row) 1950))
+;;  life-table))
+
+;_BANNER_
+;;; Problem 15
+your-answer-here
+(define (convert-lifetable lst)
+;; Converts the data to the (year race gender expected) format
+your-answer-here
+)
+
+;; test cases
+your-answer-here
+
+(define life-expect-data-new (convert-lifetable life-expect-data))
+
+(define life-table-new
+   (make-empty-table 
+   (list (make-column 'year 'number)
+         (make-column 'race 'race)
+         (make-column 'gender 'gender)
+         (make-column 'expected 'number)
+   )))
+(table-insert-all! life-expect-data-new life-table-new)
+(display "Selecting 1950 from new data\n")
+(table-display
+(table-select
+ (lambda (row)
+  (= (get 'year row) 1950))
+  life-table-new))
+
+
+;_BANNER_
+;;; Problem 16
+(display "\nTesting Problem 16\n")
+(define problem16-table
+your-answer-here
+  )
+
+;;; QUESTION Was life expectancy for white women steadily increasing
+;;; in this decade?
+your-answer-here
+
+(table-display
+  (table-order-by 'expected problem16-table)
+)
+
+;; Paste the output of Problem 16 for black female
+;; between 1950 and 1959
+
+your-answer-here
+
+;_BANNER_
+;;; Problem 17
+
+(define p3 (make-person "GeorgeBest" 'white 'female 1987))
+(define p4 (make-person "Lizarazu" 'white 'male 1940))
+
+(define (expected-years person)
+your-answer-here
+  )
+;; test cases
+(display "Testing problem 17")
+(expected-years p3)
+(expected-years p4)

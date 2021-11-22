@@ -1,0 +1,70 @@
+V3 39
+FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/chronometer.vhd" 2019/11/27.23:56:26 P.20131013
+EN work/chronometer 1575026446 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/chronometer.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/chronometer/Behavioral 1575026447 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/chronometer.vhd" \
+      EN work/chronometer 1575026446
+FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/clock_divider.vhd" 2019/11/27.19:36:38 P.20131013
+EN work/clock_divider 1575026444 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/clock_divider.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/clock_divider/Behavioral 1575026445 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/clock_divider.vhd" \
+      EN work/clock_divider 1575026444
+FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.vhd" 2019/11/27.23:56:32 P.20131013
+EN work/main 1575026452 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/main/Behavioral 1575026453 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.vhd" EN work/main 1575026452 \
+      CP clock_divider CP chronometer CP timer CP sevenSegment
+FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/decoder.vhd" 2019/11/27.19:24:10 P.20131013
+EN work/decoder 1575026442 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/decoder.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/decoder/Behavioral 1575026443 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/decoder.vhd" \
+      EN work/decoder 1575026442
+FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/driver.vhd" 2019/11/27.20:02:10 P.20131013
+EN work/driver 1575026440 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/driver.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181 PB ieee/std_logic_arith 1381692177
+AR work/driver/Behavioral 1575026441 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/driver.vhd" \
+      EN work/driver 1575026440
+FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/sevenSegment.vhd" 2019/11/27.19:24:10 P.20131013
+EN work/sevenSegment 1575026450 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/sevenSegment.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sevenSegment/Behavioral 1575026451 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/sevenSegment.vhd" \
+      EN work/sevenSegment 1575026450 CP work/slowerClock CP work/driver \
+      CP work/decoder
+FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/slowerClock.vhd" 2019/11/27.19:24:10 P.20131013
+EN work/slowerClock 1575026438 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/slowerClock.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/slowerClock/Behavioral 1575026439 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/slowerClock.vhd" \
+      EN work/slowerClock 1575026438
+FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/timer.vhd" 2019/11/27.20:31:32 P.20131013
+EN work/timer 1575026448 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/timer.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/timer/Behavioral 1575026449 \
+      FL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/timer.vhd" \
+      EN work/timer 1575026448
+FL C:/Users/otas17/Desktop/ElecLab4/Chronometer/chronometer.vhd 2019/11/27.23:56:25 P.20131013
+FL C:/Users/otas17/Desktop/ElecLab4/Chronometer/clock_divider.vhd 2019/11/27.19:36:37 P.20131013
+FL C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.vhd 2019/11/27.23:56:31 P.20131013
+FL C:/Users/otas17/Desktop/ElecLab4/Chronometer/seven_segment/decoder.vhd 2019/11/27.19:24:08 P.20131013
+FL C:/Users/otas17/Desktop/ElecLab4/Chronometer/seven_segment/driver.vhd 2019/11/27.20:02:09 P.20131013
+FL C:/Users/otas17/Desktop/ElecLab4/Chronometer/seven_segment/sevenSegment.vhd 2019/11/27.19:24:08 P.20131013
+FL C:/Users/otas17/Desktop/ElecLab4/Chronometer/seven_segment/slowerClock.vhd 2019/11/27.19:24:08 P.20131013
+FL C:/Users/otas17/Desktop/ElecLab4/Chronometer/timer.vhd 2019/11/27.20:31:31 P.20131013

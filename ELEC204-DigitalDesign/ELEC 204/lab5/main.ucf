@@ -1,0 +1,16 @@
+NET start LOC = P37;
+NET reset LOC = P32;
+
+NET "CLK" LOC = P40;
+
+NET "state_binary(1)" LOC = P3;
+NET "state_binary(0)" LOC = P6;
+
+NET "LEDs(3)" LOC = P77;
+NET "LEDs(2)" LOC = P83;
+NET "LEDs(1)" LOC = P84;
+NET "LEDs(0)" LOC = P86;
+
+NET "dec_led" loc = P13;
+NET "zero_led" loc = P16; 
+NET "test_led" loc = P93;

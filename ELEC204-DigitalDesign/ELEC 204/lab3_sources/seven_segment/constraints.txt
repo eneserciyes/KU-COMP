@@ -1,0 +1,22 @@
+
+NET "SevSegcontrol[0]" LOC = P50;
+NET "SevSegcontrol[1]" LOC = P49;
+NET "SevSegcontrol[2]" LOC = P52;
+NET "SevSegcontrol[3]" LOC = P56;
+NET "SevSegcontrol[4]" LOC = P59;
+NET "SevSegcontrol[5]" LOC = P57;
+NET "SevSegcontrol[6]" LOC = P60;
+NET "SevSegcontrol[7]" LOC = P61;
+
+NET "SevSegbus[7]" LOC = P71;
+NET "SevSegbus[6]" LOC = P62;
+NET "SevSegbus[5]" LOC = P65;
+NET "SevSegbus[4]" LOC = P72;
+NET "SevSegbus[3]" LOC = P73;
+NET "SevSegbus[2]" LOC = P98;
+NET "SevSegbus[1]" LOC = P64;
+NET "SevSegbus[0]" LOC = P70;
+
+NET "clk" LOC = P40;
+
+

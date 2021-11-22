@@ -1,0 +1,4 @@
+vhdl work "seven_segment/slowerClock.vhd"
+vhdl work "seven_segment/driver.vhd"
+vhdl work "seven_segment/decoder.vhd"
+vhdl work "seven_segment/sevenSegment.vhd"

@@ -1,0 +1,94 @@
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc7a100t-csg324-3 main.ngc main.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc7a100t-csg324-3 main.ngc main.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc7a100t-csg324-3 main.ngc main.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc7a100t-csg324-3 main.ngc main.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-tq144-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.xst" -ofn "C:/Users/otas17/Desktop/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 main.ngc main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.xst" -ofn "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 "main.ngc" main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.xst" -ofn "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 "main.ngc" main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.xst" -ofn "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc3s50a-vq100-5 "main.ngc" main.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf ports.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 

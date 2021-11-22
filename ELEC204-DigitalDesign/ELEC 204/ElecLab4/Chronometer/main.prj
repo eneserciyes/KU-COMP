@@ -1,0 +1,8 @@
+vhdl work "seven_segment/slowerClock.vhd"
+vhdl work "seven_segment/driver.vhd"
+vhdl work "seven_segment/decoder.vhd"
+vhdl work "timer.vhd"
+vhdl work "seven_segment/sevenSegment.vhd"
+vhdl work "clock_divider.vhd"
+vhdl work "chronometer.vhd"
+vhdl work "main.vhd"

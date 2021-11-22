@@ -1,0 +1,8 @@
+AR washing_machine behavioral C:/Users/bboru17/Desktop/lab5/washing_machine.vhd sub00/vhpl07 1576224522
+AR slowerclock behavioral C:/Users/bboru17/Desktop/lab5/slower_clock.vhd sub00/vhpl05 1576222784
+AR counter behavioral C:/Users/bboru17/Desktop/lab5/counter.vhd sub00/vhpl03 1576222782
+AR main behavioral C:/Users/bboru17/Desktop/lab5/main.vhd sub00/vhpl01 1576224524
+EN slowerclock NULL C:/Users/bboru17/Desktop/lab5/slower_clock.vhd sub00/vhpl04 1576222783
+EN washing_machine NULL C:/Users/bboru17/Desktop/lab5/washing_machine.vhd sub00/vhpl06 1576224521
+EN main NULL C:/Users/bboru17/Desktop/lab5/main.vhd sub00/vhpl00 1576224523
+EN counter NULL C:/Users/bboru17/Desktop/lab5/counter.vhd sub00/vhpl02 1576222781

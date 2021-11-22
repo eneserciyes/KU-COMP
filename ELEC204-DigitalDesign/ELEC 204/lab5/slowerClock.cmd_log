@@ -1,0 +1,9 @@
+vhdtdtfi -prj lab5 -o C:/Xilinx/14.7/ISE_DS/lab5/slowerClock.vhi -module slowerClock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 
+vhdtdtfi -prj lab5 -o C:/Xilinx/14.7/ISE_DS/lab5/slowerClock.vhi -module slowerClock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 
+vhdtdtfi -prj lab5 -o C:/Xilinx/14.7/ISE_DS/lab5/slowerClock.vhi -module slowerClock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 
+vhdtdtfi -prj lab5 -o C:/Xilinx/14.7/ISE_DS/lab5/slowerClock.vhi -module slowerClock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 
+vhdtdtfi -prj lab5 -o C:/Xilinx/14.7/ISE_DS/lab5/slowerClock.vhi -module slowerClock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 
+vhdtdtfi -prj lab5 -o C:/Xilinx/14.7/ISE_DS/lab5/slowerClock.vhi -module slowerClock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 
+vhdtdtfi -prj lab5 -o C:/Xilinx/14.7/ISE_DS/lab5/slowerClock.vhi -module slowerClock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 
+vhdtdtfi -prj lab5 -o "/home/enes/Desktop/ELEC 204/lab5/slowerClock.vhi" -module slowerClock -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 
+vhdtdtfi -prj lab5 -o "/home/enes/Desktop/ELEC 204/lab5/slowerClock.vhi" -module slowerClock -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slower_clock.vhd 

@@ -1,0 +1,30 @@
+V3 18
+FL "/home/enes/Desktop/ELEC 204/lab5/counter.vhd" 2019/12/13.10:19:14 P.20131013
+FL "/home/enes/Desktop/ELEC 204/lab5/main.vhd" 2019/12/13.10:20:48 P.20131013
+FL "/home/enes/Desktop/ELEC 204/lab5/slower_clock.vhd" 2019/12/13.10:08:44 P.20131013
+FL "/home/enes/Desktop/ELEC 204/lab5/washing_machine.vhd" 2019/12/13.10:21:31 P.20131013
+FL C:/Users/bboru17/Desktop/lab5/counter.vhd 2019/12/13.10:19:14 P.20131013
+EN work/counter 1576222781 FL C:/Users/bboru17/Desktop/lab5/counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/counter/Behavioral 1576222782 \
+      FL C:/Users/bboru17/Desktop/lab5/counter.vhd EN work/counter 1576222781
+FL C:/Users/bboru17/Desktop/lab5/main.vhd 2019/12/13.10:39:35 P.20131013
+EN work/main 1576224523 FL C:/Users/bboru17/Desktop/lab5/main.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/main/Behavioral 1576224524 \
+      FL C:/Users/bboru17/Desktop/lab5/main.vhd EN work/main 1576224523 \
+      CP washing_machine
+FL C:/Users/bboru17/Desktop/lab5/slower_clock.vhd 2019/12/13.10:08:44 P.20131013
+EN work/slowerClock 1576222783 FL C:/Users/bboru17/Desktop/lab5/slower_clock.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/slowerClock/Behavioral 1576222784 \
+      FL C:/Users/bboru17/Desktop/lab5/slower_clock.vhd EN work/slowerClock 1576222783
+FL C:/Users/bboru17/Desktop/lab5/washing_machine.vhd 2019/12/13.11:08:37 P.20131013
+EN work/washing_machine 1576224521 \
+      FL C:/Users/bboru17/Desktop/lab5/washing_machine.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/washing_machine/Behavioral 1576224522 \
+      FL C:/Users/bboru17/Desktop/lab5/washing_machine.vhd \
+      EN work/washing_machine 1576224521
+FL C:/Xilinx/14.7/ISE_DS/lab5/main.vhd 2019/12/12.00:31:46 P.20131013

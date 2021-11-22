@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/otas17/Desktop/ElecLab4/Chronometer/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/otas17/Desktop/ElecLab4/Chronometer/xst"
+elaborate
+-ifn clock_divider.prj
+-ifmt mixed

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.ncd
+OUTFILE=/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5vq100
+WORKINGDIR=/home/enes/Desktop/COMP 200/ElecLab4/Chronometer
+LICENSE=WebPack
+USER_INFO=211816171_0_0_410

@@ -1,0 +1,3 @@
+vhdtdtfi -prj lab5 -o "/home/enes/Desktop/ELEC 204/lab5/counter.vhi" -module counter -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -prj lab5 -o "/home/enes/Desktop/ELEC 204/lab5/counter.vhi" -module counter -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 
+vhdtdtfi -prj lab5 -o "/home/enes/Desktop/ELEC 204/lab5/counter.vhi" -module counter -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 

@@ -1,0 +1,16 @@
+AR slowerclock behavioral "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/slowerClock.vhd" sub00/vhpl01 1575026439
+AR sevensegment behavioral "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/sevenSegment.vhd" sub00/vhpl13 1575026451
+AR driver behavioral "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/driver.vhd" sub00/vhpl03 1575026441
+AR main behavioral "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.vhd" sub00/vhpl15 1575026453
+AR clock_divider behavioral "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/clock_divider.vhd" sub00/vhpl07 1575026445
+EN slowerclock NULL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/slowerClock.vhd" sub00/vhpl00 1575026438
+EN clock_divider NULL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/clock_divider.vhd" sub00/vhpl06 1575026444
+AR decoder behavioral "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/decoder.vhd" sub00/vhpl05 1575026443
+EN main NULL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/main.vhd" sub00/vhpl14 1575026452
+EN sevensegment NULL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/sevenSegment.vhd" sub00/vhpl12 1575026450
+EN chronometer NULL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/chronometer.vhd" sub00/vhpl08 1575026446
+AR timer behavioral "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/timer.vhd" sub00/vhpl11 1575026449
+AR chronometer behavioral "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/chronometer.vhd" sub00/vhpl09 1575026447
+EN driver NULL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/driver.vhd" sub00/vhpl02 1575026440
+EN decoder NULL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/seven_segment/decoder.vhd" sub00/vhpl04 1575026442
+EN timer NULL "/home/enes/Desktop/COMP 200/ElecLab4/Chronometer/timer.vhd" sub00/vhpl10 1575026448

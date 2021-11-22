@@ -1,0 +1,435 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-vq100
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/bboru17/Desktop/lab5/washing_machine.vhd" in Library work.
+Entity <washing_machine> compiled.
+Entity <washing_machine> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/bboru17/Desktop/lab5/main.vhd" in Library work.
+Architecture behavioral of Entity main is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <washing_machine> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <main> in library <work> (Architecture <behavioral>).
+Entity <main> analyzed. Unit <main> generated.
+
+Analyzing Entity <washing_machine> in library <work> (Architecture <behavioral>).
+Entity <washing_machine> analyzed. Unit <washing_machine> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <washing_machine>.
+    Related source file is "C:/Users/bboru17/Desktop/lab5/washing_machine.vhd".
+WARNING:Xst:1305 - Output <test> is never assigned. Tied to value 0.
+WARNING:Xst:1780 - Signal <slowClock> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <curr_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 30                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | curr_state$not0000        (positive)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 11                                             |
+    | Power Up State     | 11                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit register for signal <counter_init>.
+    Found 32-bit subtractor for signal <counter_init$share0000>.
+    Found 1-bit register for signal <dec>.
+    Found 1-bit register for signal <start_debounced>.
+    Found 1-bit register for signal <zero>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <washing_machine> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "C:/Users/bboru17/Desktop/lab5/main.vhd".
+WARNING:Xst:1780 - Signal <zero> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <start_debounced> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <slowClock> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dec> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <curr_state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <counter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <main> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 4
+ 1-bit register                                        : 3
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_washing_machine/curr_state/FSM> on signal <curr_state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 11    | 00
+ 00    | 01
+ 01    | 11
+ 10    | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <main> ...
+
+Optimizing unit <washing_machine> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 9.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 204
+#      GND                         : 1
+#      INV                         : 32
+#      LUT1                        : 1
+#      LUT2                        : 5
+#      LUT2_D                      : 3
+#      LUT3                        : 13
+#      LUT3_D                      : 1
+#      LUT4                        : 59
+#      LUT4_D                      : 1
+#      LUT4_L                      : 15
+#      MUXCY                       : 39
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 37
+#      FDE                         : 1
+#      FDRE                        : 36
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 2
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-5 
+
+ Number of Slices:                       67  out of    704     9%  
+ Number of Slice Flip Flops:             37  out of   1408     2%  
+ Number of 4 input LUTs:                130  out of   1408     9%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of     68    17%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 37    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.229ns (Maximum Frequency: 138.331MHz)
+   Minimum input arrival time before clock: 5.866ns
+   Maximum output required time after clock: 7.123ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.229ns (frequency: 138.331MHz)
+  Total number of paths / destination ports: 4208 / 74
+-------------------------------------------------------------------------
+Delay:               7.229ns (Levels of Logic = 13)
+  Source:            Inst_washing_machine/counter_init_8 (FF)
+  Destination:       Inst_washing_machine/counter_init_27 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_washing_machine/counter_init_8 to Inst_washing_machine/counter_init_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.495   0.559  Inst_washing_machine/counter_init_8 (Inst_washing_machine/counter_init_8)
+     LUT4:I0->O            1   0.561   0.000  Inst_washing_machine/counter_init_cmp_eq0000_wg_lut<0> (Inst_washing_machine/counter_init_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<0> (Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<1> (Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<2> (Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<3> (Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<4> (Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<5> (Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<6> (Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          16   0.179   0.945  Inst_washing_machine/counter_init_cmp_eq0000_wg_cy<7> (Inst_washing_machine/counter_init_cmp_eq0000)
+     LUT2_D:I1->LO         1   0.562   0.102  Inst_washing_machine/counter_init_mux0000<14>11 (N48)
+     LUT4:I3->O           18   0.561   0.910  Inst_washing_machine/counter_init_mux0000<12>21 (Inst_washing_machine/N7)
+     LUT4_L:I3->LO         1   0.561   0.123  Inst_washing_machine/counter_init_mux0000<4>_SW0 (N18)
+     LUT3:I2->O            1   0.561   0.000  Inst_washing_machine/counter_init_mux0000<4> (Inst_washing_machine/counter_init_mux0000<4>)
+     FDRE:D                    0.197          Inst_washing_machine/counter_init_27
+    ----------------------------------------
+    Total                      7.229ns (4.590ns logic, 2.639ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 105 / 105
+-------------------------------------------------------------------------
+Offset:              5.866ns (Levels of Logic = 5)
+  Source:            start (PAD)
+  Destination:       Inst_washing_machine/counter_init_27 (FF)
+  Destination Clock: clk rising
+
+  Data Path: start to Inst_washing_machine/counter_init_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.824   0.751  start_IBUF (start_IBUF)
+     LUT3_D:I0->O         10   0.561   0.816  Inst_washing_machine/curr_state_and00001 (Inst_washing_machine/curr_state_and0000)
+     LUT4:I1->O           18   0.562   0.910  Inst_washing_machine/counter_init_mux0000<12>21 (Inst_washing_machine/N7)
+     LUT4_L:I3->LO         1   0.561   0.123  Inst_washing_machine/counter_init_mux0000<4>_SW0 (N18)
+     LUT3:I2->O            1   0.561   0.000  Inst_washing_machine/counter_init_mux0000<4> (Inst_washing_machine/counter_init_mux0000<4>)
+     FDRE:D                    0.197          Inst_washing_machine/counter_init_27
+    ----------------------------------------
+    Total                      5.866ns (3.266ns logic, 2.600ns route)
+                                       (55.7% logic, 44.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 13 / 8
+-------------------------------------------------------------------------
+Offset:              7.123ns (Levels of Logic = 2)
+  Source:            Inst_washing_machine/curr_state_FSM_FFd2 (FF)
+  Destination:       LEDs<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Inst_washing_machine/curr_state_FSM_FFd2 to LEDs<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            24   0.495   1.172  Inst_washing_machine/curr_state_FSM_FFd2 (Inst_washing_machine/curr_state_FSM_FFd2)
+     LUT2:I0->O            4   0.561   0.499  Inst_washing_machine/curr_state_FSM_Out21 (LEDs_1_OBUF)
+     OBUF:I->O                 4.396          LEDs_1_OBUF (LEDs<1>)
+    ----------------------------------------
+    Total                      7.123ns (5.452ns logic, 1.671ns route)
+                                       (76.5% logic, 23.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.25 secs
+ 
+--> 
+
+Total memory usage is 294244 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
